@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{E2DB60B5-1118-4C00-B6A0-7031A76640DE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>C:\devkitPro\libctru\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ctnmod.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\..\devkitPro\libctru\include\3ds\types.h" />
+    <ClInclude Include="build\config_template_ini.h" />
+    <ClInclude Include="build\osdata_cfw_version_template_xml.h" />
+    <ClInclude Include="build\osdata_memory_template_xml.h" />
+    <ClInclude Include="build\osdata_xml.h" />
+    <ClInclude Include="build\target_xml.h" />
+    <ClInclude Include="include\bootdiag.h" />
+    <ClInclude Include="include\csvc.h" />
+    <ClInclude Include="include\draw.h" />
+    <ClInclude Include="include\errdisp.h" />
+    <ClInclude Include="include\fmt.h" />
+    <ClInclude Include="include\font.h" />
+    <ClInclude Include="include\gdb.h" />
+    <ClInclude Include="include\gdb\breakpoints.h" />
+    <ClInclude Include="include\gdb\debug.h" />
+    <ClInclude Include="include\gdb\hio.h" />
+    <ClInclude Include="include\gdb\mem.h" />
+    <ClInclude Include="include\gdb\monitor.h" />
+    <ClInclude Include="include\gdb\net.h" />
+    <ClInclude Include="include\gdb\query.h" />
+    <ClInclude Include="include\gdb\regs.h" />
+    <ClInclude Include="include\gdb\remote_command.h" />
+    <ClInclude Include="include\gdb\server.h" />
+    <ClInclude Include="include\gdb\stop_point.h" />
+    <ClInclude Include="include\gdb\thread.h" />
+    <ClInclude Include="include\gdb\tio.h" />
+    <ClInclude Include="include\gdb\verbose.h" />
+    <ClInclude Include="include\gdb\watchpoints.h" />
+    <ClInclude Include="include\gdb\xfer.h" />
+    <ClInclude Include="include\ifile.h" />
+    <ClInclude Include="include\input_redirection.h" />
+    <ClInclude Include="include\luma_config.h" />
+    <ClInclude Include="include\luma_shared_config.h" />
+    <ClInclude Include="include\luminance.h" />
+    <ClInclude Include="include\memory.h" />
+    <ClInclude Include="include\menu.h" />
+    <ClInclude Include="include\menus.h" />
+    <ClInclude Include="include\menus\cheats.h" />
+    <ClInclude Include="include\menus\debugger.h" />
+    <ClInclude Include="include\menus\miscellaneous.h" />
+    <ClInclude Include="include\menus\n3ds.h" />
+    <ClInclude Include="include\menus\process_list.h" />
+    <ClInclude Include="include\menus\screen_filters.h" />
+    <ClInclude Include="include\menus\screen_filters_srgb_tables.h" />
+    <ClInclude Include="include\menus\sysconfig.h" />
+    <ClInclude Include="include\minisoc.h" />
+    <ClInclude Include="include\MyThread.h" />
+    <ClInclude Include="include\ntp.h" />
+    <ClInclude Include="include\plugin.h" />
+    <ClInclude Include="include\plugin\3gx.h" />
+    <ClInclude Include="include\plugin\plgldr.h" />
+    <ClInclude Include="include\plugin\plgloader.h" />
+    <ClInclude Include="include\pmdbgext.h" />
+    <ClInclude Include="include\process_patches.h" />
+    <ClInclude Include="include\redshift\colorramp.h" />
+    <ClInclude Include="include\service_manager.h" />
+    <ClInclude Include="include\shell.h" />
+    <ClInclude Include="include\sleep.h" />
+    <ClInclude Include="include\sock_util.h" />
+    <ClInclude Include="include\task_runner.h" />
+    <ClInclude Include="include\utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

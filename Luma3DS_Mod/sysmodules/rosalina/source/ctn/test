@@ -1,0 +1,8 @@
+open
+check: credits, help, test and files
+check plugin (and kill it)
+proc view
+debug program (all windows)
+stop debugging
+memory view
+memory search & scan

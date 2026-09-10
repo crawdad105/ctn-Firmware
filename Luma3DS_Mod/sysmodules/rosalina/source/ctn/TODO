@@ -1,0 +1,21 @@
+// Default
+fix goto (in memory tab) to not use scan input
+move dump buttons
+toggle visible windows
+
+// Other
+read any memory (kind of already done)
+add more file functionality (viewing binaries and maybe modify stuff)
+add reading and searching loading screens
+add display for scan and search addresses
+modify registers
+read other archive types
+
+// Server
+add network keyboard input (from server) 
+
+// Large
+local screen recorder
+add full text editor
+add built in c compiler
+full elf loader for plugins
