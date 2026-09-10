@@ -22,7 +22,11 @@ Luma3DS_Mod/exceptions/arm11/build
 
 *.cplg
 
-plugin/3ModLoader
+pluginTest/3ModLoader
+asmCode
+move
+move2
+setup
 
 Luma3DS*.zip
 hbmenu.zip

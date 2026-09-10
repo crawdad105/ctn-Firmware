@@ -34,6 +34,7 @@ Plugins allow loading and unloading and running arbitrary code at any point.<br/
 ### Virtual Debugger
 The virtual debugger allows you to do debug stuff from a pc. ([Needs this](Debug3dsServerConsole/build/Debug3dsServerConsole.dll))<br/>
 [Read Mode](VirtualDebugger.md)
+<br/>
 
 > [!NOTE]
-> GPLv3 because Luma3DS is and its required. Custom works/files can either be found under [Luma3DS_Mod/sysmodules/rosalina/source/ctn](Luma3DS_Mod/sysmodules/rosalina/source/ctn) or [Luma3DS_Mod/sysmodules/rosalina/source/ctn](Luma3DS_Mod/sysmodules/rosalina/source/ctn). Modified work/files should be found by searching for `sponge` (shout out Terry Davis), its possible i modified something a long time ago and forgot. 
+> GPLv3 because Luma3DS is and its required. Custom works/files can either be found under [Luma3DS_Mod/sysmodules/rosalina/source/ctn](Luma3DS_Mod/sysmodules/rosalina/source/ctn) or [Luma3DS_Mod/sysmodules/rosalina/include/ctn](Luma3DS_Mod/sysmodules/rosalina/include/ctn). Modified work/files should be found by searching for `sponge` (shout out Terry Davis, rest in peace), its possible i modified something a long time ago and forgot. 
